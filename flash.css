@@ -12,8 +12,7 @@
     padding: 0.2em;
   }
   #flashlight {
-    --Xpos: 50vw;
-    --Ypos: 50vh;
+    --Xpos: 80vw;    --Ypos: 80vh;
   }
   #flashlight:before {
     content: "";
