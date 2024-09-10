@@ -12,6 +12,7 @@ const isTouchDevice = () => {
 };
 
 function getMousePosition(e) {
+  
   mouseX = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
   mouseY = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
 

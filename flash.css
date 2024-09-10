@@ -14,6 +14,9 @@
   #flashlight {
     --Xpos: 80vw;    --Ypos: 80vh;
   }
+  #flashlight > img {
+    --Xpos: 20vw;    --Ypos: 20vh;
+  }
   #flashlight:before {
     content: "";
     display: block;
