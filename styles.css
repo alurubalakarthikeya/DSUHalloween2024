@@ -7,8 +7,8 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(22, 72%, 50%);
-  --first-color-alt: hsl(22, 72%, 46%);
+  --first-color: red;
+  --first-color-alt: red;
   --white-color: #fff;
   --text-color: hsl(22, 4%, 75%);
   --text-color-light: hsl(22, 4%, 55%);
@@ -379,7 +379,7 @@ img {
   color: var(--white-color);
 }
 
-/*=============== CATEGORY ===============*/
+/*Category section */
 .category{
   position: relative;
 }
@@ -438,7 +438,7 @@ img {
   left: -4rem;
 }
 
-/*=============== ABOUT ===============*/
+/*About section*/
 .about{
   position: relative;
 }
@@ -546,7 +546,7 @@ img {
   right: -8rem;
 }
 
-/*=============== PARTY ===============*/
+/*party section*/
 .party{
   position: relative;
 }
@@ -595,7 +595,7 @@ img {
   animation: animate-star-2 5s infinite ease-in-out;
 }
 
-/*=============== FOOTER ===============*/
+/*Footer section*/
 .footer{
   position: relative;
   overflow: hidden;
@@ -708,7 +708,7 @@ img {
   bottom: -5rem;
 }
 
-/*=============== SCROLL BAR ===============*/
+/*scroll bar*/
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
@@ -724,7 +724,7 @@ img {
   background-color: hsl(22, 8%, 25%);
 }
 
-/*=============== SCROLL UP ===============*/
+/*scroll up*/
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -744,12 +744,11 @@ img {
   transform: translateY(-.25rem);
 }
 
-/* Show Scroll Up*/
 .show-scroll{
   bottom: 3rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
+/*Media Queries for responsiveness*/
 /* For small devices */
 @media screen and (max-width: 340px){
   .container{
@@ -1056,7 +1055,6 @@ img {
     left: 10%;
   }
 }
-/* For 2K resolutions (2048 x 1152) */
 @media screen and (min-width: 2048px){
   /* .body{
     zoom: 1.6;

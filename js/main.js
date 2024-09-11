@@ -1,55 +1,46 @@
-/*=============== SHOW MENU ===============*/
+/*Menu bar*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+/*display menu*/
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
     })
 }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+/*hide menu*/
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+/*mobile responsiveness*/
 const navLink = document.querySelectorAll('.nav__link')
-
 const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/*background header*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
     this.scrollY >= 50 ? header.classList.add('scroll-header') 
                        : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*scorll animation*/
 const sections = document.querySelectorAll('section[id]')
-    
 const scrollActive = () =>{
   	const scrollY = window.pageYOffset
-
 	sections.forEach(current =>{
 		const sectionHeight = current.offsetHeight,
 			  sectionTop = current.offsetTop - 58,
 			  sectionId = current.getAttribute('id'),
 			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
 		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
 			sectionsClass.classList.add('active-link')
 		}else{
@@ -59,7 +50,7 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*scroll up animation*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
@@ -68,13 +59,13 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*scroll reveal animation*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
-    //reset: true //Animations repeat
+    duration: 1000,
+    delay: 200,
+    reset: true
 })
 
 sr.reveal(`.home__data, .footer__content, .footer__logo, .footer__description`)
