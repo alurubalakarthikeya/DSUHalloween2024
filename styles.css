@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
-
 :root {
   --header-height: 3.5rem;
-
   --first-color: rgb(144, 10, 0);
   --first-color-alt: rgb(165, 0, 0);
   --white-color: #fff;
@@ -11,10 +9,8 @@
   --text-color-light: hsl(22, 4%, 55%);
   --body-color: hsl(22, 8%, 6%);
   --container-color: hsl(22, 8%, 7%);
-
   --body-font: "Playfair Display", serif;
   --second-font: "Creepster", system-ui;
-
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -22,15 +18,12 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
-
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3.5rem;
@@ -42,7 +35,6 @@
     --smaller-font-size: .813rem;
   }
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -226,23 +218,19 @@ img {
   left: -3rem;
 }
 
-/* Show menu */
 .show-menu{
   top: 0;
 }
 
-/* Change background header */
 .bg-header{
   background-color: var(--body-color);
   box-shadow: 0 4px 8px hsla(22, 10%, 2%, .4);
 }
 
-/* Active link */
 .active-link{
   color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
 .home{
   position: relative;
 }
@@ -315,7 +303,6 @@ img {
   right: -2rem;
 }
 
-/* Star animation */
 @keyframes animate-star-1{
   0%{
     transform: scale(.7) rotate(-15deg);
@@ -440,7 +427,6 @@ img {
   left: -4rem;
 }
 
-/*About section*/
 .about{
   position: relative;
 }
@@ -476,7 +462,6 @@ img {
   left: -8rem;
 }
 
-/*=============== ITEMS ===============*/
 .items{
   position: relative;
 }
@@ -548,7 +533,6 @@ img {
   right: -8rem;
 }
 
-/*party section*/
 .party{
   position: relative;
 }
@@ -597,7 +581,6 @@ img {
   animation: animate-star-2 5s infinite ease-in-out;
 }
 
-/*Footer section*/
 .footer{
   position: relative;
   overflow: hidden;
@@ -725,7 +708,6 @@ img {
   background-color: hsl(22, 8%, 25%);
 }
 
-/*scroll up*/
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -834,7 +816,7 @@ img {
     grid-template-columns: repeat(4, max-content);
   }
 }
-/* For large devices */
+
 @media screen and (min-width: 1024px){
   .shape__small,
   .shape__big{
