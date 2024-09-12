@@ -172,7 +172,12 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px){
+@media(max-width: 767px){
+  
+.mobile {
+  display: none;
+}
+
   .nav__menu{
     position: fixed;
     top: -100%;
@@ -185,7 +190,6 @@ img {
     transition: top .4s;
   }
 }
-
 .nav__list{
   display: flex;
   flex-direction: column;
@@ -731,7 +735,7 @@ img {
   bottom: 3rem;
 }
 
-@media screen and (max-width: 340px){
+@media (max-width: 340px){
   .container{
     margin-inline: 1rem;
   }
@@ -759,6 +763,9 @@ img {
   .footer__content{
     gap: 2.5rem;
   }
+.mobile {
+  display: none;
+}
 }
 
 @media screen and (min-width: 576px){
