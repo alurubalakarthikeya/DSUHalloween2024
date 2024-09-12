@@ -1,24 +1,19 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Butcherman&family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: red;
-  --first-color-alt: red;
+  --first-color: rgb(144, 10, 0);
+  --first-color-alt: rgb(165, 0, 0);
   --white-color: #fff;
-  --text-color: hsl(22, 4%, 75%);
+  --text-color: white;
   --text-color-light: hsl(22, 4%, 55%);
   --body-color: hsl(22, 8%, 6%);
   --container-color: hsl(22, 8%, 7%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
-  --second-font: 'Butcherman', cursive;
+  --body-font: "Playfair Display", serif;
+  --second-font: "Creepster", system-ui;
 
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -28,17 +23,14 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3.5rem;
@@ -51,7 +43,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -82,7 +73,10 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+.floating-imgs {
+  animation: floating-img 5s infinite ease-in-out;
+}
+
 .container {
   max-width: 1024px;
   margin-inline: 1.5rem;
@@ -108,10 +102,9 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden; 
 }
 
-/* Shapes */
 .shape__bg {
   position: fixed;
   width: 100%;
@@ -141,7 +134,6 @@ img {
   opacity: .8;
 }
 
-/*=============== HEADER & NAV ===============*/
 .header{
   position: fixed;
   width: 100%;
@@ -172,6 +164,7 @@ img {
   column-gap: .5rem;
   font-weight: var(--font-medium);
   transition: color .3s;
+  font-family: var(--second-font);
 }
 
 .nav__logo img{
@@ -309,13 +302,13 @@ img {
 
 .home__tree-1,
 .home__tree-2{
-  width: 120px;
+  width: 200px;
   position: absolute;
   top: 18rem;
 }
 
 .home__tree-1{
-  left: -2rem;
+  left: 0rem;
 }
 
 .home__tree-2{
@@ -336,6 +329,18 @@ img {
     transform: scale(.7) rotate(-15deg);
     opacity: .2;
   }
+}
+
+@keyframes floating-img {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 @keyframes animate-star-2{
@@ -363,12 +368,10 @@ img {
   right: -10rem;
 }
 
-/*=============== BUTTON ===============*/
 .button{
   display: inline-block;
   background-color: var(--white-color);
   padding: 1rem 1.5rem;
-  border-radius: 4rem;
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   transition: background .3s, color .3s;
@@ -379,7 +382,6 @@ img {
   color: var(--white-color);
 }
 
-/*Category section */
 .category{
   position: relative;
 }
@@ -402,7 +404,7 @@ img {
 }
 
 .category__img{
-  width: 120px;
+  width: 170px;
   position: absolute;
   inset: 0;
   margin: 0 auto;
@@ -708,7 +710,6 @@ img {
   bottom: -5rem;
 }
 
-/*scroll bar*/
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
@@ -748,8 +749,6 @@ img {
   bottom: 3rem;
 }
 
-/*Media Queries for responsiveness*/
-/* For small devices */
 @media screen and (max-width: 340px){
   .container{
     margin-inline: 1rem;
@@ -780,7 +779,6 @@ img {
   }
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
@@ -1056,9 +1054,6 @@ img {
   }
 }
 @media screen and (min-width: 2048px){
-  /* .body{
-    zoom: 1.6;
-  } */
 
   .home{
     position: relative;
