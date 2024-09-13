@@ -291,6 +291,7 @@ img {
 
 .home__description{
   margin: 2.5rem;
+  font-family: cursive;
 }
 
 .home__img{
@@ -928,6 +929,7 @@ img {
   .about__description,
   .party__container{
     margin-bottom: 2.5rem;
+    font-family: cursive;
   }
 
   .items__container{
