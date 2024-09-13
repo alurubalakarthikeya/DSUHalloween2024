@@ -993,6 +993,7 @@ img {
 
   .footer__logo{
     font-size: var(--h3-font-size);
+    font-family: cursive;
     margin-bottom: 1.5rem;
   }
 
