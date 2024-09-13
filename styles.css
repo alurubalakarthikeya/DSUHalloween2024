@@ -219,7 +219,7 @@ img {
   width: 180px;
   position: absolute;
   top: 40%;
-  left: -3rem;
+  left: 0rem;
 }
 
 .show-menu{
@@ -291,6 +291,7 @@ img {
 
 .home__description{
   margin: 2.5rem;
+  font-family: cursive;
 }
 
 .home__img{
@@ -511,6 +512,7 @@ img {
 
 .items__name{
   font-size: var(--normal-font-size);
+  font-family: cursive;
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
 }
@@ -628,6 +630,7 @@ img {
 
 .footer__description{
   font-size: var(--small-font-size);
+  font-family: cursive;
 }
 
 .footer__content,
@@ -697,6 +700,7 @@ img {
   display: block;
   margin-top: 8rem;
   font-size: var(--smaller-font-size);
+  font-family: cursive;
   text-align: center;
   color: var(--text-color-light);
 }
@@ -928,6 +932,7 @@ img {
   .about__description,
   .party__container{
     margin-bottom: 2.5rem;
+    font-family: cursive;
   }
 
   .items__container{

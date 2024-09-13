@@ -54,6 +54,31 @@ const sr = ScrollReveal({
     reset: true
 })
 
+let mouseX = 0;
+let mouseY = 0;
+
+let flashlight = document.getElementById("flashlight");
+const isTouchDevice = () => {
+  try {
+    document.createEvent("TouchEvent");
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
+
+function getMousePosition(e) {
+  
+  mouseX = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
+  mouseY = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
+
+  flashlight.style.setProperty("--Xpos", mouseX + "px");
+  flashlight.style.setProperty("--Ypos", mouseY + "px");
+}
+
+document.addEventListener("mousemove", getMousePosition);
+document.addEventListener("touchmove", getMousePosition);
+
 sr.reveal(`.home__data, .footer__content, .footer__logo, .footer__description`)
 sr.reveal(`.home__tree-1`, {origin: 'left', delay:800})
 sr.reveal(`.home__tree-2`, {origin: 'right', delay:800})
