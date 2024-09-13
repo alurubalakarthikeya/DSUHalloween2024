@@ -226,6 +226,26 @@ img {
   top: 0;
 }
 
+.login-section {
+  background-color: rgba(144, 10, 0, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.login-section > input {
+  margin: 10px;
+}
+
+.login-section > button {
+  background-color: var(--first-color-alt);
+  color: var(--white-color);
+}
+
+.login-section > a:visited {
+  color: var(--white-color);
+}
+
+
 .bg-header{
   background-color: var(--body-color);
   box-shadow: 0 4px 8px hsla(22, 10%, 2%, .4);
@@ -376,7 +396,6 @@ img {
   font-weight: var(--font-semi-bold);
   transition: background .3s, color .3s;
   font-family: var(--second-font);
-
 }
 
 .button:hover{
@@ -385,6 +404,28 @@ img {
   font-family: var(--second-font);
 }
 
+.button > a:visited {
+  color: var(--white-color);
+}
+
+
+.button-1{
+  display: inline-block;
+  background-color: var(--white-color);
+  padding: 10px;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  transition: background .3s, color .3s;
+  font-family: var(--second-font);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.button-1:hover{
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-family: var(--second-font);
+}
 .category{
   position: relative;
 }
