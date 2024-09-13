@@ -268,6 +268,13 @@ img {
   color: var(--first-color);
 }
 
+.home__title .Deez{
+  display: block;
+  font-family: var(--second-font);
+  font-weight: initial;
+  color: var(--white-color);
+}
+
 .home__title-img-1{
   top: -1rem;
   left: -1.5rem;
@@ -305,6 +312,8 @@ img {
 
 .home__tree-2{
   right: -2rem;
+  height: auto;
+  width: 100%;
 }
 
 @keyframes animate-star-1{
@@ -366,11 +375,14 @@ img {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   transition: background .3s, color .3s;
+  font-family: var(--second-font);
+
 }
 
 .button:hover{
   background-color: var(--first-color);
   color: var(--white-color);
+  font-family: var(--second-font);
 }
 
 .category{
@@ -436,7 +448,7 @@ img {
 }
 
 .about__container{
-  row-gap: 3.5rem;
+  row-gap: 3.0rem;
 }
 
 .about__container .section__title{
