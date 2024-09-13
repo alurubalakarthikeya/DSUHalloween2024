@@ -312,6 +312,8 @@ img {
 
 .home__tree-2{
   right: -2rem;
+  height: auto;
+  width: 100%;
 }
 
 @keyframes animate-star-1{
