@@ -1,38 +1,29 @@
-/*Menu bar*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*display menu*/
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
     })
 }
-
-/*hide menu*/
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
     })
 }
-
-/*mobile responsiveness*/
 const navLink = document.querySelectorAll('.nav__link')
 const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*background header*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('scroll-header') 
                        : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-/*scorll animation*/
 const sections = document.querySelectorAll('section[id]')
 const scrollActive = () =>{
   	const scrollY = window.pageYOffset
@@ -49,17 +40,12 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
-
-/*scroll up animation*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
 	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-/*scroll reveal animation*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',

@@ -20,10 +20,12 @@ p {
 
 #flashlight > img {
   width: 80vh; 
-  height: auto;
+  height: 55vh;
   position: absolute;
-  top: calc(var(--Ypos) - 185px); 
-  left: calc(var(--Xpos) - 295px);
+  top: calc(var(--Ypos) - 225px); 
+  left: calc(var(--Xpos) - 310px);
+  opacity: 0.6;
+  border: transparent;
 }
 
 #flashlight:before {
@@ -36,7 +38,7 @@ p {
   background: radial-gradient(
       circle 9em at var(--Xpos) var(--Ypos),
       rgba(242, 6, 6, 0.633),
-      rgba(0, 0, 0, 1)
+      rgba(0, 0, 0, 0.974)
   );
 }
 
