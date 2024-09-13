@@ -32,8 +32,11 @@
               <img src="img/stars1.png" alt="home image" class="home__title-img-1"/>  
               <img src="img/stars1.png" alt="home image" class="home__title-img-2"/>
             </h1>
-            <p class="home__description">Countdown for the Halloween event</p>
+            <h1>Countdown to October 31st</h1><br>
             <div class="login-section">
+                <p>Time Left:</p>
+                <div id="countdown"></div> <br>
+                <a href="home.html"  class="button">Back to home</a>
             </div>
         <img
             src="img/jack o lantern.png"
@@ -41,7 +44,32 @@
             class="home__img floating-imgs"
           />
       </section>
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Set the date we're counting down to
+        const countDownDate = new Date("October 31, 2024 00:00:00").getTime();
+    
+        // Update the countdown every 1 second
+        const countdownFunction = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+    
+          // Time calculations for days, hours, minutes, and seconds
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+          // Display the result in the element with id="countdown"
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+            minutes + "m " + seconds + "s ";
+    
+          // If the countdown is finished, write some text
+          if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
   </body>
 </html>

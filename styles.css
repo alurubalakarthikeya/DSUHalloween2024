@@ -136,6 +136,18 @@ img {
   transition: background .3s, box-shadow .3s;
 }
 
+.count-down {
+    position: fixed;
+    background: rgba(144, 10, 0, 0.2);
+    top: 20%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    right: 2%;
+    z-index: var(--z-fixed);
+}
+
+
 .nav{
   position: relative;
   height: var(--header-height);
