@@ -423,6 +423,7 @@ img {
 }
 
 .category__description{
+  font-family: cursive;
   font-size: var(--small-font-size);
 }
 
@@ -461,6 +462,7 @@ img {
 
 .about__description{
   margin-bottom: 2rem;
+  font-family: cursive;
 }
 
 .about__img{
