@@ -320,6 +320,8 @@ img {
 
 .home__tree-2{
   right: -2rem;
+  height: auto;
+  width: 100%;
 }
 
 /* Star animation */
