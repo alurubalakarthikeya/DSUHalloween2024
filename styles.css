@@ -373,11 +373,14 @@ img {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   transition: background .3s, color .3s;
+  font-family: var(--second-font);
+
 }
 
 .button:hover{
   background-color: var(--first-color);
   color: var(--white-color);
+  font-family: var(--second-font);
 }
 
 .category{
