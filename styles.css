@@ -431,7 +431,7 @@ img {
   transition: background .3s, color .3s;
   font-family: var(--second-font);
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .button-1:hover{

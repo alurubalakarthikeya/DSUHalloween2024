@@ -16,7 +16,7 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="" class="nav__logo">
-          <img src="img/dsu logo.png" alt="logo image" />DSU 
+          <img src="img/dsu logo.png" alt="logo image" />DSU
         </a>
       </nav>
     </header>
@@ -29,25 +29,29 @@
             <h1 class="home__title">
               <span>Halloween</span>
               <span class="Deez">Week at DSU</span>
-              <img src="img/stars1.png" alt="home image" class="home__title-img-1"/>  
-              <img src="img/stars1.png" alt="home image" class="home__title-img-2"/>
+              <img src="img/stars1.png" alt="home image" class="home__title-img-1" />
+              <img src="img/stars1.png" alt="home image" class="home__title-img-2" />
             </h1>
             <p class="home__description">Sign in to join the event</p>
             <div class="login-section">
+              <form action="home.html" method="get">
                 <label for="username">Enter Username</label>
-                <input type="text" class="button-1"> <br>
+                <input type="text" id="username" name="username" class="button-1" required /><br />
                 <label for="password">Enter Password</label>
-                <input type="password" class="button-1"> <br> <br>
-                <a href="home.html" style="color: white;"><button class="button">Login</button></a><br> <br>
-                <p>don't have an account? <a href="signup.html" style="color: red;">Sign up</a></p>
+                <input type="password" id="password" name="password" class="button-1" required /><br /><br />
+                <button type="submit" class="button">Login</button>
+              </form>
+              <br />
+              <p>
+                Don't have an account? <a href="signup.html" style="color: red;">Sign up</a>
+              </p>
+            </div>
+            <img src="img/jack o lantern.png" alt="home image" class="home__img floating-imgs" />
+          </div>
         </div>
-        <img
-            src="img/jack o lantern.png"
-            alt="home image"
-            class="home__img floating-imgs"
-          />
       </section>
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/main.js"></script>
+    </main>
+    <script src="scrollreveal.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
