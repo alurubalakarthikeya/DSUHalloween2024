@@ -129,7 +129,7 @@ img {
 .header{
   position: fixed;
   width: 100%;
-  background: rgba(144, 10, 0, 0.2);
+  background: rgba(144, 10, 0, 0.4);
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -230,7 +230,7 @@ img {
 .nav__img{
   width: 180px;
   position: absolute;
-  top: 40%;
+  top: 15%;
   left: 0rem;
 }
 
@@ -740,7 +740,7 @@ img {
 
 .footer__tree-1{
   top: 5rem;
-  right: 8rem;
+  right: 2rem;
 }
 
 .footer__tree-2{
@@ -1077,8 +1077,8 @@ img {
 
   .footer__tree-1{
     top: initial;
-    bottom: 1.5rem;
-    right: -2rem;
+    bottom: 8rem;
+    right: 2rem;
   }
 
   .footer__tree-2{
