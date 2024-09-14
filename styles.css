@@ -323,7 +323,7 @@ img {
 
 .home__description{
   margin: 2.5rem;
-  font-family: cursive;
+  font-family: var(--body-font);
 }
 
 .home__img{
@@ -477,7 +477,7 @@ img {
 }
 
 .category__description{
-  font-family: cursive;
+  font-family: var(--body-font);
   font-size: var(--small-font-size);
 }
 
@@ -516,7 +516,7 @@ img {
 
 .about__description{
   margin-bottom: 2rem;
-  font-family: cursive;
+  font-family: var(--body-font);
 }
 
 .about__img{
@@ -684,7 +684,7 @@ img {
 
 .footer__description{
   font-size: var(--small-font-size);
-  font-family: cursive;
+  font-family: var(--body-font);
 }
 
 .footer__content,
@@ -754,7 +754,7 @@ img {
   display: block;
   margin-top: 8rem;
   font-size: var(--smaller-font-size);
-  font-family: cursive;
+  font-family: var(--body-font);
   text-align: center;
   color: var(--text-color-light);
 }
@@ -986,7 +986,7 @@ img {
   .about__description,
   .party__container{
     margin-bottom: 2.5rem;
-    font-family: cursive;
+    font-family: var(--body-font);
   }
 
   .items__container{
@@ -1047,7 +1047,7 @@ img {
 
   .footer__logo{
     font-size: var(--h3-font-size);
-    font-family: cursive;
+    font-family: var(--body-font);
     margin-bottom: 1.5rem;
   }
 
