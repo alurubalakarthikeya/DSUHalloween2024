@@ -564,8 +564,7 @@ img {
 }
 
 .items__name{
-  font-size: var(--normal-font-size);
-  font-family: cursive;
+  font-size: var(--body-font);
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
 }
@@ -573,6 +572,7 @@ img {
 .items__price{
   display: block;
   font-weight: var(--font-semi-bold);
+  font-family: var(--second-font);
   color: var(--first-color);
   margin-bottom: .5rem;
 }
@@ -585,6 +585,7 @@ img {
   border-radius: 4rem;
   cursor: pointer;
   transition: background .3s;
+  font-family: var(--second-font);
   border: none;
   outline: none;
 }
