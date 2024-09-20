@@ -1134,3 +1134,11 @@ img {
     width: 300px;
   }
 }
+
+input:invalid {
+  border-color: gold;
+}
+
+body {
+  filter: blur(10px);
+}
