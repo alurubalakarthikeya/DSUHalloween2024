@@ -1138,7 +1138,3 @@ img {
 input:invalid {
   border-color: gold;
 }
-
-body {
-  filter: blur(10px);
-}
